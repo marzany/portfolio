@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Harjoitustyö - Mari Jäntti</title><!--HTML projektisivu-->
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d4f3584bad.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Mari Jäntti" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Harjoitustyö</h1>
+    </header>
+    <nav><!--Valikkopalkki-->
+      <a href="index2.html">Etusivu</a>
+      <a href="esittely.html">Minusta</a>
+      <a href="cv.html">CV</a>
+      <div class="dropdown"><!--Alasvetovalikko projekteille-->
+        <div class="dropbtn"><a href="portfolio.html">Projektit</a></div>
+        <div class="dropdown-content">
+          <a href="c.html">C-Ohjelmointi</a>
+          <a href="python.html">Python</a>
+          <a href="projekti.html">Harjoitustyö</a>
+        </div>
+      </div>
+    </nav>
+    <main class="row"><!--Sivun alku-->
+      <section><!--Osio sivun sisällölle-->
+        <article><!--Tekstiartikkeli-->
+          <h2>Projektityö</h2>
+          <p>
+            Tämä harjoitustyö toteutettiin osana
+            <b>Jyväskylän ammattikorkeakoulun (JAMK) Valintaopintojaksoa</b>,
+            jolla valittiin kevään 2021 yhteishaussa tieto- ja
+            viestintätekniikan insinööriopintojen monimuotototeutukseen hakeneet
+            opiskelijat. Valintaopintojakson kurssin aiheena oli Web-tekniikat,
+            ja kurssin harjoitustyönä oli toteuttaa oma portfolio. Kokosin
+            verkkosivuilleni tärkeimmät asiat omasta osaamisestani, taidoistani
+            ja kuvauksen itsestäni, sekä kuvaukset harjoitustöistä, joita olen
+            tähän mennessä tehnyt. Sivujen tarkoituksena on toimia
+            ansioluettelonani mahdollisille tuleville työnantajille. Sivut
+            skaalautuvat eri tavalla pienemmillä ruuduilla (kuten
+            mobiililaitteilla).
+          </p>
+        </article><!--Tekstisisältö päättyy-->
+        <article class="gallery"><!--Kuvagalleria-->
+          <h2>Oma portfolioni</h2>
+          <a href="images/etusivu.jpg" data-lightbox="HTML" data-title="Etusivu"
+            ><img src="images/etusivu.jpg" alt="image1"
+          /></a>
+          <a
+            href="images/etusivu2.jpg"
+            data-lightbox="HTML"
+            data-title="Skaalautunut etusivu 1"
+            ><img src="images/etusivu2.jpg" alt="image2"
+          /></a>
+          <a
+            href="images/etusivu3.jpg"
+            data-lightbox="HTML"
+            data-title="Skaalautunut etusivu 2"
+            ><img src="images/etusivu3.jpg" alt="image3"
+          /></a>
+          <a href="images/sivu2.jpg" data-lightbox="HTML" data-title="CV"
+            ><img src="images/sivu2.jpg" alt="image4"
+          /></a>
+          <a href="images/sivu3.jpg" data-lightbox="HTML" data-title="Projektit"
+            ><img src="images/sivu3.jpg" alt="image5"
+          /></a>
+          <a
+            href="images/sivu3-2.jpg"
+            data-lightbox="HTML"
+            data-title="Skaalautunut Projektit"
+            ><img src="images/sivu3-2.jpg" alt="image6"
+          /></a>
+        </article><!--Kuvagallerian osio päättyy-->
+      </section><!--Sisällön loppu-->
+    </main><!--Sivun loppu-->
+    <footer>
+      <i class="far fa-copyright"></i> Mari Jäntti email: mari409@gmail.com puh:
+      0451372735
+    </footer>
+    <script src="js/lightbox-plus-jquery.js"></script><!--Kuvagallerian scripti-->
+  </body>
+</html>

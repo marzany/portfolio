@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Python - Mari Jäntti</title><!--Python projektisivu-->
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d4f3584bad.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Mari Jäntti" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Python</h1>
+    </header>
+    <nav><!--Valikkopalkki-->
+      <a href="index2.html">Etusivu</a>
+      <a href="esittely.html">Minusta</a>
+      <a href="cv.html">CV</a>
+      <div class="dropdown"><!--Alasvetovalikko projekteille-->
+        <div class="dropbtn"><a href="portfolio.html">Projektit</a></div>
+        <div class="dropdown-content">
+          <a href="c.html">C-Ohjelmointi</a>
+          <a href="python.html">Python</a>
+          <a href="projekti.html">Harjoitustyö</a>
+        </div>
+      </div>
+    </nav>
+    <main class="row"><!--Sivun alku-->
+      <section><!--Osio sivun sisällölle-->
+        <article><!--Tekstiartikkeli-->
+          <h2>Python</h2>
+          <p>
+            Suoritin <b>Embedded Python</b>- kurssin KAMK:n
+            Highway2Code-ohjelman kautta. Kurssiin kuului Python-ohjelmoinnin
+            perusteet, jonka jälkeen opeteltiin ohjelmoimaan sensoreita
+            microPythonilla (Embedded python). Kurssin lopputyönä oli ohjelmoida
+            microPythonilla ESP32-boardiin kytketty DHT22-sensori mittaamaan
+            lämpötilaa ja ilmankosteutta sekä syöttämään mittaustulokset
+            pilvipalveluun (ThingSpeak).<br />
+            Ensin täytyi asentaa toimintakuntoon uPycraft-ohjelmointiympäristö,
+            yhdistää se ESP32-boardiin ja sitten kytkeä sensori toimintaan.
+            UPycraftilla ohjelmoitiin web-serveri (jonka kautta laite on
+            yhteydessä wifiin ja mittaustulokset päivittyivät raaliajassa
+            web-sivulle), sekä main-ohjelma, johon sisältyi sensorin
+            toiminnallisuudet. ThingSpeak-sivulle mittaustulokset latautuivat
+            määrätyn ajan välein.
+          </p>
+        </article><!--Tekstisisältö päättyy-->
+        <article class="gallery"><!--Kuvagalleria-->
+          <h2>Embedded Python</h2>
+          <a
+            href="images/measures.jpg"
+            data-lightbox="Embedded Python"
+            data-title="Measurements"
+            ><img src="images/measures.jpg" alt="image1"
+          /></a>
+          <a
+            href="images/dht22.jpg"
+            data-lightbox="Embedded Python"
+            data-title="ESP32 and DHT22"
+            ><img src="images/dht22.jpg" alt="image3"
+          /></a>
+          <a
+            href="images/thingspeak.jpg"
+            data-lightbox="Embedded Python"
+            data-title="ThingSpeak"
+            ><img src="images/thingspeak.jpg" alt="image2"
+          /></a>
+        </article><!--Kuvagallerian osio päättyy-->
+      </section><!--Sisällön loppu-->
+    </main><!--Sivun loppu-->
+    <footer>
+      <i class="far fa-copyright"></i> Mari Jäntti email: mari409@gmail.com puh:
+      0451372735
+    </footer>
+    <script src="js/lightbox-plus-jquery.js"></script><!--Kuvagallerian scripti-->
+  </body>
+</html>

@@ -1,0 +1,501 @@
+* {
+    box-sizing: border-box;/*Kaikille elementeille yksi yhteinäinen leveys/korkeus sisältäen kaiken yksityiskohtaisemman tyylittelyn*/
+}
+
+/*Sivun rakenne*/
+body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
+    background-color: gray;
+    background-image: url("../images/laptop2.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    overflow: auto;
+    background-color:black;
+}
+
+/*Sisääntulo-sivun rakenne*/
+.frontpage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: rgba(0,0,0,1);
+    background-image: url("../images/laptop2.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    text-align: center;
+    font-size: 150%;
+}
+
+/*Sisääntulosivun kuvan muotoilu*/
+.frontpage img {
+    width: 30%;
+    height: 30%;
+    margin: 5% 0%;
+    padding: 2%;
+    background: rgba(0, 153, 153, 0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+
+/*Otsikkopalkki*/
+header {
+    width: 100%;
+    height: 8em;
+    padding: 1.5em 0em;
+    background: rgba(0,0,0,0.85);
+    background-image: url("../images/portfolio2.png");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: center;
+    color: #F0EBEB;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0.4em;
+}
+
+/*Sisääntulosivun otsikkopalkki*/
+.frontheader {
+    width: 100%;
+    height: 70%;
+    padding: 1em 0.5em;
+    background: rgba(0,0,0,0.7);
+    background-image: url("../images/portfolio1.png");
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    background-position: left;
+    color: #F0EBEB;
+    text-align: right;
+    font-size: 200%;
+    letter-spacing: 0.4em;
+}
+
+/*Otsikkopalkin otsikko*/
+h1 {
+    font-family: 'Girassol', cursive;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+/*Sisältö-osioiden otsikot*/
+h2 {
+    text-align: center;
+    font-size: 140%;
+    font-weight: bold;
+    color: #F7F5EE;
+}
+
+/*Yhteystietojen otsikko*/
+h3 {
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    color: #F7F5EE;
+}
+
+/*Tekstit*/
+p {
+    padding: 0.5em;
+    text-align: justify;
+    font-size: 1.1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Yhteystiedot*/
+address {
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+/*Alasvetovalikon näkyvyyden sijoittelu*/
+.dropdown {
+    display: inline-block;
+}
+
+/*Alasvetovalikon tyylittely*/
+.dropdown .dropbtn {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40%;
+    text-shadow: 4px 4px 8px black;
+    color: #F7F5EE;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+/*Alasvetovalikon sisällön tyylittely*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(0, 153, 153, 0.9);
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*Alasvetovalikon sisällön (linkkien) muotoilu*/
+.dropdown-content a {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/*Alasvetovalikon tausta*/
+.dropdown-content a:hover {
+    background: rgba(0, 153, 153, 0.9);
+}
+
+/*Alasvetovalikon asettelu*/
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+}
+
+/*Valikon linkit*/
+nav a {
+    margin: 0;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+/*Valikon muotoilu / tyylittely / sijoittelu*/
+nav {
+    position: sticky;/*Aina sivun yläreunassa!*/
+    top: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 110%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40%;
+    text-shadow: 6px 6px 8px black;
+    background: rgba(0, 153, 153, 0.9);
+    color: #F7F5EE;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/*Linkit*/
+a:link, a:not(.active) {
+    color:#F7F5EE;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Valikon linkkien tausta kun kursori päällä*/
+nav a:hover:not(.active) {
+    background-color: #D8CCAF;
+    border-radius: 2em;
+}
+
+/*Linkkien värimuutos kun kursori päällä*/
+a:hover {
+    color: #575757;
+}
+
+/*Profiilisivujen kuvien muotoilu*/
+.profimg {
+    width: 40%;
+    margin: 5%;
+    border-radius: 1em;
+    height: auto;
+}
+
+/*Projektisivun linkki-kuvien muotoilu*/
+.imglink {
+    width: 100%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Projektilinkin säiliön sijoittelu*/
+.container {
+    margin: 4% 0%;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+/*Projektilinkin päälliskerros*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 153, 153, 0.9);
+}
+
+/*Säiliön ja päälliskerroksen läpikuultavuus*/
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/*Projektilinkin päälliskerroksen tekstin muotoilu/sijoittelu*/
+.text {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*Kuvagallerian sisällön keskitys*/
+.gallery {
+    text-align: center;
+}
+
+/*Kuvagallerian kuvien muotoilu sivulla*/
+.gallery img {
+    width: 150px;
+    height: 150px;
+    margin: 0.2em;
+}
+
+/*Kuvagallerian kuvien efekti kun kursori päällä*/
+.gallery img:hover {
+    filter: drop-shadow(0.6em 0.6em 1em black);
+}
+
+/*Tekstiosioiden muotoilu ja asettelu*/
+article {
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin: 1% 5%;
+    padding: 2% 1%;
+    border: 0.1em solid white;
+    border-radius: 3em;
+    box-shadow: 0.6em 0.6em 1em black;
+    background: rgba(0, 160, 165, 0.95);
+}
+
+/*Projektilinkki-osioiden muotoilu ja asettelu*/
+.projects {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin: 1% 4%;
+    padding: 2% 1%;
+    border: 0.1em solid white;
+    border-radius: 3em;
+    box-shadow: 0.6em 0.6em 1em black;
+    background: rgba(0, 160, 165, 0.95);
+}
+
+/*Keskitykseen (kuville)*/
+.centered {
+    text-align: center;
+}
+
+/*Sisältö-osioiden muotoilu ja asettelu (sisältää mm. sivujen tekstiosiot)*/
+section {
+    float: left;
+    text-align: left;
+    line-height: 1.6em;
+    width: 70%;
+    height: auto;
+    overflow: auto;
+    margin: 2% 15%;
+    padding: 1em;
+    color: black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Sivun alapalkin muotoilu / sijoittelu*/
+footer {
+    float: left;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #009999;
+    line-height: 1.875em;
+    text-shadow: 4px 4px 10px black;
+    text-align: center;
+    color: #F7F5EE;
+    font-weight: bold;
+}
+
+/*Aikajanan sijoittelu*/
+.timeline {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+  
+/* Aikajanan linja */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #009999;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+/* Aikajanan sisällön kontti */
+.cont {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+  
+/* Aikajanan ympyrät */
+.cont::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #009999;
+    top: 15px;
+    border-radius: 50%;
+    z-index: -1;
+}
+  
+/* Aikajanan sisällön asettelu: vasen*/
+.left {
+    left: 0;
+}
+  
+/* Aikajanan sisällön asettelu: oikea */
+.right {
+    left: 50%;
+}
+  
+/* Nuolet (vasen) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: -1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+  
+/* Nuolet (oikea) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+  
+/* Aikajanan ympyrän asettelun viilaus */
+.right::after {
+    left: -13px;
+}
+  
+/* Aikajanan sisältö */
+.content {
+    padding: 1em;
+    position: relative;
+    border: 0.1em solid white;
+    border-radius: 1em;
+    background: rgba(0, 160, 165, 0.95);
+}
+
+@media screen and (max-width: 768px) /* Skaalautuvuus pienemmälle screenille*/ {
+    body, .frontpage {
+        background-image: url("../images/laptop4.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+    }
+
+    article {
+      width: 90%;
+      margin: 1% 1%;
+    }
+    .projects {
+        width: 80%;
+        margin: 1% 10%;
+    }
+    header {
+        background-size: 100% 100%;
+    }
+    .frontheader {
+        background-image: url("../images/portfolio2.png");
+        background-size: 70% 100%;
+        font-size: 100%;
+
+    }
+    section {
+        width: 80%;
+    }
+    .dropdown-content {
+        width: 25%;
+    }
+    /*Aikajanan asettelun muutokset*/
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .cont {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+        
+    .cont::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 18px;
+    }
+        
+    .right {
+        left: 0%;
+    }
+
+}
+
+
+

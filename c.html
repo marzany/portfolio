@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>C-Ohjelmointi - Mari Jäntti</title><!--C-ohjelmoinnin projektisivu-->
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d4f3584bad.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Mari Jäntti" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>C-Ohjelmointi</h1>
+    </header>
+    <nav><!--Valikkopalkki-->
+      <a href="index2.html">Etusivu</a>
+      <a href="esittely.html">Minusta</a>
+      <a href="cv.html">CV</a>
+      <div class="dropdown"><!--Alasvetovalikko projekteille-->
+        <div class="dropbtn"><a href="portfolio.html">Projektit</a></div>
+        <div class="dropdown-content">
+          <a href="c.html">C-Ohjelmointi</a>
+          <a href="python.html">Python</a>
+          <a href="projekti.html">Harjoitustyö</a>
+        </div>
+      </div>
+    </nav>
+    <main class="row"><!--Sivun alku-->
+      <section><!--Osio sivun sisällölle-->
+        <article><!--Tekstiartikkeli-->
+          <h2>C-Ohjelmointi</h2>
+          <p>
+            Suoritin <b>Basics of C-programming</b>- kurssin KAMK:n
+            Highway2Code-ohjelman kautta. Perusasioiden opiskelun sekä
+            lopputentin lisäksi kurssin lopputyönä oli toteuttaa yksinkertainen
+            Kivi-Paperi-Sakset- peli, joka ajetaan komentorivillä. Pelaaja pelaa
+            tässä "tietokonetta vastaan". Peli kysyy aluksi pelattavien
+            kierrosten lukumäärän, ja sen jälkeen kysyy pelaajalta joka
+            kierroksella pelaajan valinnan: kivi (r), paperi (p) vai sakset (s).
+            Ohjelma arpoo "tietokoneen" valinnan. Jokaisen kierroksen päätteeksi
+            peli ilmoittaa, voittiko vai hävisikö pelaaja, vai tuliko tasapeli.
+            Kierrosten päätyttyä peli ilmoittaa voitetut, hävityt sekä
+            tasapeliin päättyneet kierrokset.
+          </p>
+        </article><!--Tekstisisältö päättyy-->
+        <article class="gallery"><!--Kuvagalleria-->
+          <h2>Kivi-Sakset-Paperi</h2>
+          <a
+            href="images/portfolioon1.jpg"
+            data-lightbox="C-ohjelmointi"
+            data-title="C-ohjelmointi"
+            ><img src="images/portfolioon1.jpg" alt="image1"
+          /></a>
+          <a
+            href="images/portfolioon2.jpg"
+            data-lightbox="C-ohjelmointi"
+            data-title="C-ohjelmointi"
+            ><img src="images/portfolioon2.jpg" alt="image2"
+          /></a>
+        </article><!--Kuvagallerian osio päättyy-->
+      </section><!--Sisällön loppu-->
+    </main><!--Sivun loppu-->
+    <footer>
+      <i class="far fa-copyright"></i> Mari Jäntti email: mari409@gmail.com puh:
+      0451372735
+    </footer>
+    <script src="js/lightbox-plus-jquery.js"></script><!--Kuvagallerian scripti-->
+  </body>
+</html>

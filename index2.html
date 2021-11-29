@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Etusivu - Mari Jäntti</title><!--Portfolion etusivu-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d4f3584bad.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Mari Jäntti" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Etusivu</h1>
+    </header>
+    <nav><!--Valikkopalkki-->
+      <a href="index2.html">Etusivu</a>
+      <a href="esittely.html">Minusta</a>
+      <a href="cv.html">CV</a>
+      <div class="dropdown"><!--Alasvetovalikko projekteille-->
+        <div class="dropbtn"><a href="portfolio.html">Projektit</a></div>
+        <div class="dropdown-content">
+          <a href="c.html">C-Ohjelmointi</a>
+          <a href="python.html">Python</a>
+          <a href="projekti.html">Harjoitustyö</a>
+        </div>
+      </div>
+    </nav>
+    <main class="row"><!--Portfolion etusivu alkaa-->
+      <section><!--Osio tekstisisällölle-->
+        <article><!--Tekstiartikkeli 1-->
+          <h2>Tervetuloa!</h2>
+          <p>
+            Mahtavaa, että olet löytänyt tiesi portfoliooni! :)
+            <a href="cv.html" title="CV">Näiltä sivuilta</a> löydät tiedot
+            koulutustaustastani ja työhistoriastani.
+            <a href="portfolio.html" title="Projektit">Täältä</a> pääset
+            tarkastelemaan tekemiäni harjoitustöitä.
+          </p>
+          <div class="centered"><!--Auttaa kuvan asettelussa artikkelin sisälle-->
+            <img class="profimg" src="images/file.png" alt="file" />
+          </div>
+          <h3>Yhteystiedot:</h3>
+          <address>
+            Sähköposti: mari409@gmail.com<br />
+            puhelin: 0451372735<br />
+            <a
+              href="https://www.linkedin.com/in/mari-j%C3%A4ntti-583a50200/"
+              target="_blank"
+              title="LinkedIn"
+              ><i class="fab fa-linkedin"></i> Profiili</a
+            >
+          </address>
+        </article><!--Artikkeli 1 päättyy-->
+        <article><!--Tekstiartikkeli 2-->
+          <h2>Yleistä</h2>
+          <p>
+            Hei! Olen Mari Jäntti, 29v ja asun tällä hetkellä Helsingissä.
+            Aloitin ohjelmoinnin opettelun itsenäisesti vuonna 2019. Olen tähän
+            mennessä ehtinyt perehtyä Javan, Pythonin, C:n sekä Javascriptin
+            perusteisiin sekä hieman tietokantoihin ja Dockeriin. Tulevaisuuden
+            suunnitelmani on päästä tekemään alan töitä, ja tämän
+            toteuttamiseksi seuraava tavoitteeni on päästä opiskelemaan tieto-
+            ja viestintätekniikan insinööriksi.
+            <a href="esittely.html" title="Minusta">Lue täältä</a> lisää tietoja
+            minusta.
+          </p>
+          <div class="centered"><!--Auttaa kuvan asettelussa artikkelin sisälle-->
+            <img class="profimg" src="images/prof1.jpg" alt="profiilikuva" />
+          </div>
+        </article><!--Artikkeli 2 päättyy-->
+      </section><!--tekstiosio päättyy-->
+    </main><!--Sivun loppu-->
+    <footer>
+      <i class="far fa-copyright"></i> Mari Jäntti email: mari409@gmail.com puh:
+      0451372735
+    </footer>
+  </body>
+</html>
